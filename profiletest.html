@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>GALARE</title>
+	<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+	<link href="css/bootstrap.css" rel="stylesheet" />
+	<link href="css/bootstrap-theme.css" rel="stylesheet" />
+	<link href="css/custom.css" rel="stylesheet" />
+	<link href="css/index.css" rel="stylesheet" />
+	<link href="css/profiletest.css" rel="stylesheet" />
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+			<nav class="navbar navbar-default navbar-fixed-top">
+			  <div class="container">
+			   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+				  </button>
+				  <a class="navbar-brand" href="index.php">GALA.RE</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+				  <ul class="nav navbar-nav navbar-right">
+					<li><a href="#home">HOME</a></li>
+					<li><a href="#where_to_go">WHERE TO GO</a></li>
+					<li><a href="#what_to_ride">WHAT TO RIDE</a></li>
+					<li><a href="#how_much">HOW MUCH</a></li>
+					<li><a href="#about">ABOUT US</a></li>
+					<li><a href="signup.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+					<li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+				  </ul>
+				  
+				</div>
+				</div>
+			  </div>
+			</nav>
+			
+				<!-- User Header Profile -->
+				<div class = "col-lg-12 col-sm-12 header-brand box">
+						<div class="profile-pic">
+							<img src="images/user.png" class="img-responsive" alt="" />
+						</div>
+						<br />
+						<div class="row col-lg-12 profile-name">
+						<a href="edit_prof.php"><?php 
+							if ( isset($name)) {
+							echo $name;
+						}
+						?></a>
+						<p>@<?php 
+							if ( isset($_SESSION['username'])) {
+							echo $_SESSION['username'];
+						}
+						?></p>
+						<p><?php 
+							if ( isset($_SESSION['sex'])) {
+							echo $_SESSION['sex'];
+						}
+						?> | <?php 
+							if ( isset($_SESSION['birthday'])) {
+							echo $_SESSION['birthday'];
+						}
+						?></p>
+						</div>
+				</div>
+				<!-- Blogs -->
+				<div class="col-lg-12 posted-blogs">
+				<?php
+			try {
+				$sql = "SELECT post_id, post_title, post_desc, post_date, username, post.user_id FROM post JOIN user ON post.user_id = user.user_id ORDER BY post_id DESC";
+				$query = mysqli_query($conn, $sql);
+				while($row = mysqli_fetch_array($query, MYSQLI_ASSOC)){
+					
+				if($row['user_id'] == $_SESSION['userid']){
+					echo '<div class="row">';
+						echo'<h1>MY BLOGS</h1>';
+						echo'<div class="row col-lg-5 blog-contents">';
+						echo /*Picture*/ '
+						<img src="images/visayas.jpg" class="image-responsive" />';
+							
+							echo'<h2>'.$row['post_title'].'</h2>';
+							
+							echo'<p>'.date('jS M Y H:i:s', strtotime($row['post_date'])).' | '.$row['username'].'</p>';
+							echo'<a href="viewpost.php?id='.$row['post_id'].'">READ MORE</a>';
+							<br /><br />
+						</div>';
+						
+						echo'<div class="row col-lg-5 blog-contents">';
+						echo /*Picture*/ '
+						<img src="images/visayas.jpg" class="image-responsive" />';
+							
+							echo'<h2>'.$row['post_title'].'</h2>';
+							
+							echo'<p>'.date('jS M Y H:i:s', strtotime($row['post_date'])).' | '.$row['username'].'</p>';
+							echo'<a href="viewpost.php?id='.$row['post_id'].'">READ MORE</a>';
+							<br /><br />
+						</div>';
+						<!-- <div class="row col-lg-5 blog-contents">
+						<img src="images/visayas.jpg" class="image-responsive" />
+							<h2>VALENTINES DAY</h2>
+							<p>February 14, 2017 | Damiie Gregorio</p>
+							<a href="">READ MORE</a>
+							<br /><br />
+						</div> -->
+					</div>
+				</div>
+</body>
+</html>
