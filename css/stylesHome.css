@@ -1,0 +1,102 @@
+/*GalaRe2 CSS*/
+@keyframes appear{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+@keyframes slide{
+	from{top: -100%;}
+	to{bottom: 0;}
+}
+@keyframes slide-up{
+	from{bottom: -100%;}
+	to{bottom: 0;}
+}
+@face-face{
+	font-family:Facile Sans;
+	src: url(../font/Facile Sans.ttf);
+}
+* {
+	margin: 0px; 
+	padding: 0px; 
+}
+body{
+	background-image: url("../images/bg.jpg");
+	background-position: right top;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	
+	}
+	.container{
+
+	margin: auto;
+	width: 70%;
+	height: absolute;
+}
+
+	
+#header{
+	background-image: url("../images/12.jpg");
+	background-color: rgba(0,57,105,0.5);
+	height: 320px;
+	width: 100%;
+	top: 0;
+	right: 0;
+	animation: slide 2s;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-shadow: 0px 0px 8px black;
+	position:relative;
+	}
+#login{
+	background-color: transparent;
+	width: 855px;
+	
+}
+#login a{
+	text-decoration: none;
+	font: 18px Facile Sans;
+	color: gray;
+	float: right;
+	padding-left: 10px;
+	
+}
+#login a:hover{
+	color: white;
+	transition: 0.5s;
+	text-shadow: 0px 0px 7px white;
+}
+
+#menu{
+	width: 950px;
+	background-color: rgba(255,255,255,0.5);
+	margin: 20px;
+	position: relative;
+    display: inline-block;
+	}
+#menu a{
+	text-decoration: none;
+	font: 18px Facile Sans;
+	color: rgba(6,47,79,0.8);;
+	float: left;
+	margin: 0px auto;
+	padding: 1% 5%;
+
+	}
+#menu a:hover{
+	color: white;
+	transition: 0.7s;
+	text-decoration: underline;
+	text-shadow: 0px 0px 7px black;
+}
+
+	#error_msg{
+	width: 80%;  
+	margin: 5px auto; 
+	height: 30px; 
+	border: 1px solid #FF0000; 
+	background: #FFB9B8; 
+	color: #FF0000;
+	text-align: center;
+	padding-top: 10px;
+}

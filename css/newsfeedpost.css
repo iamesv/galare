@@ -1,0 +1,8 @@
+//profile newsfeedpost css
+
+.postFeed{
+	height: 1090px;
+	background-color: white;
+	width: 500px;
+	border: 10px solid black;
+}

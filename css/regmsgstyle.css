@@ -1,0 +1,66 @@
+/*css sign up*/
+
+@keyframes appear{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+@keyframe slide{
+	0%   {top: 0px;}
+    25%  {top: 200px;}
+    75%  {top: 50px}
+    100% {top: 100px;}
+}
+
+#signup{
+	animation: appear 3s;
+	color: white;
+	width: 550px;
+	height: 350px;
+	margin: 10px auto;
+	text-align: center;
+	font: 18px Geosanslight;
+	padding: 0px auto;
+	border: 0px;
+	border-radius: 15px;
+
+}
+#signup:hover{
+	color: black;
+	border: 0px;
+	transition: 3s;
+	background-color: rgba(255,255,255,0.8);
+	box-shadow: 15px 15px 75px -10px rgba(0,0,0,0.75);
+}
+#signup h3{
+	font: 20px Verdana;
+	padding: 5%;
+	color: #000;
+}
+
+#check
+{
+	width: 70px;
+	height: 70px;
+	background-color: transparent;
+	border-style: none;
+}
+
+#k
+{
+	margin-top: 15px;
+	width: 18%;
+	height: 6%;
+	background-color:#44c767;
+	border-radius:5px;
+	border:1px solid #566963;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:11px 23px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #2b665e;
+}
+

@@ -1,0 +1,11 @@
+.addPost-container{
+	width: 100%;
+	background-color: white;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+	text-align: center;
+	align-items: center;
+	padding: 200px 0px;
+	overflow: hidden;
+	font-family: Montserrat, sans-serif;
+}

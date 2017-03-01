@@ -1,0 +1,43 @@
+/*login css*/
+*{
+	margin: 0px auto;
+	padding: 0px;
+	box-sizing: border-box;
+}
+.login{
+	width: 100%;
+	background-image: url("../images/visayas.jpg");
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+	text-align: center;
+	align-items: center;
+	padding: 300px 0px;
+	overflow: hidden;
+	font-family: Montserrat, sans-serif;
+}
+.login h1{
+	font-size: 85px;
+	font-family: Montserrat, sans-serif;
+	color: white;
+	text-shadow: 2px 2px 4px #000000;
+	font-weight: bold;
+	letter-spacing: 0px;
+}
+.login-btn{
+	letter-spacing: 4px;
+	background-color: white;
+	border: 1px solid black;
+	padding: 5px 40px;
+}
+.login-btn:hover{
+	background-color: black;
+	color: white;
+	transition: 0.5s;
+}
+.login-label{
+	font-family: Montserrat, sans-serif;
+	font-size: 16px;
+	text-transform: uppercase;
+	color: white;
+	text-shadow: 2px 2px 4px #000000;
+}

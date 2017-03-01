@@ -1,0 +1,104 @@
+/*Home CSS*/
+.branding{
+	width: 100%;
+	background-image: url("../images/food.jpg");
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+	text-align: center;
+	align-items: center;
+	padding-top: 250px;
+	padding-bottom: 100px;
+	overflow: hidden;
+}
+.branding h1{
+	font-family: Montserrat, sans-serif;
+	font-weight: bold;
+	font-size: 100px;
+	color: white;
+	text-shadow: 2px 2px 4px #000000;
+}
+.home-container{
+	width: 100%;
+	background-color: transparent;
+	box-sizing: border-box;
+	text-align: center;
+	align-items: center;
+	margin: 0px auto;
+	padding: 30px 70px;
+	overflow: hidden;
+	
+}
+.side-container{
+	background-color: #f4f4f4;
+	box-sizing: border-box;
+	padding: 20px;
+	margin: 0px 30px;
+	height: absolute;
+}
+.side-container-profile{
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	height: 160px;
+	width: 100%;
+	padding: 5px;
+	font-family: Montserrat, sans-serif;
+
+}
+.side-container-profile img{
+	height: 130px;
+	width: 130px;
+}
+.side-container h2{
+	font-size: 20px;
+	color: black;
+	letter-spacing: 2px;
+}
+.left-feed{
+	overflow: hidden;
+	padding: 0px;
+	font-family: Montserrat, sans-serif;
+	height: absolute;
+	text-align: center;
+}
+.left-feed-title {
+	background-color: black;
+	padding: 20px;
+}
+.left-feed-title h1{
+	font-size: 24px;
+	letter-spacing: 5px;	
+}
+.blog-contents{
+	margin: 10px 0px;
+	background-color: #dbe8f7;
+	box-sizing: border-box;
+	padding: 0px;
+}
+.blog-contents img{
+	width: 100%;
+	height: 100%;
+}
+.blog-contents h2{
+	color: black;
+	margin: 10px 20px;
+	padding: 3px;
+}
+.blog-contents p{
+	font-family: sans-serif;
+	padding: 8px 0px;
+	font-style: italic;
+}
+.blog-contents a{
+	background-color: black;
+	color: white;
+	padding: 5px 8px;
+	letter-spacing: 6px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.blog-contents a:hover{
+	transition: 0.5s;
+	background-color: white;
+	color: black;
+	border: 1px solid black;
+}

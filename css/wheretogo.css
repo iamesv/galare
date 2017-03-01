@@ -1,0 +1,49 @@
+/*where to go css*/
+
+.wtg_container{
+	height: abosolute;
+	width: 100%;
+	margin: 0px auto;
+	border-top: 4px solid black;
+	border-bottom: 4px solid black;
+	padding: 50px;
+	font-family: Montserrat, sans-serif;
+	text-align: center;
+
+}
+.wtg_container a{
+	font-weight: bold;
+	letter-spacing: 6px;
+	font-size: 45px;
+	text-decoration: none;
+	background-color: black;
+	color: white;
+}
+.wtg_container a:hover{
+	letter-spacing: 20px;
+	transition: 0.5s;
+}
+.wtg_container p{
+	color: gray;
+	font-size: 20px;
+	letter-spacing: 5px;
+
+}
+
+.wtg_container img{
+	width: 100%;
+	height: 720px;
+	padding: 50px;
+	cursor: pointer;
+}
+.wtg_container img:hover{
+	 filter:opacity(30%);
+	 transition: 1s;
+}
+hr.style1 { 
+  height: 30px; 
+  border-style: solid; 
+  border-color: #8c8b8b; 
+  border-width: 1px 0 0 0; 
+  border-radius: 20px; 
+} 

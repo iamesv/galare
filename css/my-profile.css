@@ -1,0 +1,103 @@
+/*profile css*/
+*{
+	margin: 0px auto;
+	padding: 0px;
+	
+}
+.header-brand{
+	width: 100%;
+	background-image: url("../images/header2.jpg");
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+	text-align: center;
+	align-items: center;
+	padding-top: 300px;
+	padding-bottom: 80px;
+	overflow: hidden;
+}
+.profile-pic{
+	border: 2px solid black;
+	border-radius: 100em;
+	width: 160px;
+	height: 160px;
+	padding: 30px;
+	background-color: rgba(255,255,255,0.8);
+	box-sizing: border-box;
+}
+.profile-pic img{
+	border-radius: 100em;
+}
+.profile-pic:hover{
+	width: 170px;
+	height: 170px;
+	transition: 0.5s;
+	cursor: pointer;
+	background-color: black;
+	border: 2px solid white;
+}
+.profile-name a{
+	align-items: center;
+	letter-spacing: 15px;
+	padding: 10px 20px;
+	color: black;
+	font-size: 26px;
+	background-color: white;
+	border: 1px solid black;
+}
+.profile-name a:hover{
+	text-decoration: underline;
+}
+.profile-name p{
+	color: white;
+	padding: 10px 0px;
+}
+.posted-blogs{
+	width: 100%;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+	text-align: center;
+	align-items: center;
+	padding: 0px;
+	overflow: hidden;
+	background-color: white;
+}
+.posted-blogs h1{
+	color: black;
+	font-weight: bold;
+	letter-spacing: 15px;
+}
+.blog-contents{
+	background-color: #dbe8f7;
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 40px;
+}
+.blog-contents img{
+	width: 100%;
+	height: 100%;
+}
+.blog-contents h2{
+	color: black;
+	margin: 10px 20px;
+	padding: 3px;
+}
+.blog-contents p{
+	font-family: sans-serif;
+	padding: 8px 0px;
+	font-style: italic;
+}
+.blog-contents a{
+	background-color: black;
+	color: white;
+
+	padding: 5px 8px;
+	letter-spacing: 6px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.blog-contents a:hover{
+	transition: 0.5s;
+	background-color: white;
+	color: black;
+	border: 1px solid black;
+}

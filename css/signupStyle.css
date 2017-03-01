@@ -1,0 +1,96 @@
+/*sign up css*/
+
+@keyframes appear{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+@keyframes slide{
+	from{top: -100%;}
+	to{bottom: 0;}
+}
+@keyframes slide-right{
+	from{left: -100%;}
+	to{right: 0;}
+}
+#form{
+	margin: 0px auto;
+	padding-top: 150px;
+	background-color: rgba(255,255,255,0.8);
+	height: 700px;
+	width: 950px;
+	top: 380px;
+	right: 0;
+	left: 0;
+	animation: slide-right 1s;
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	align-items: center;
+	box-shadow: 15px 15px 75px -10px rgba(0,0,0,0.75);
+}
+#form h3{
+	font: 50px Geosanslight;
+	text-align: center;
+	font-weight: bold;
+}
+#form h4{
+	font: 18px Facile Sans;
+	padding: 0px 5px;
+}
+#form p{
+	font: 18px Facile Sans;
+	text-align: center;
+	margin: 1px;
+}
+#form input[type=text], input[type=password]{
+	border-style: none;
+    border-bottom: 1px solid #000;
+	width: 390px;
+    text-align: center;
+	font: 15px Geosanslight;
+	background-color: transparent;
+	box-sizing: border-box;
+	height: absolute;
+	padding: 5px 20px;
+	margin: 20px 550px;
+         }
+#form input[type=radio]{
+	float: left;
+	margin-top: 5px;
+	margin-left: 680px;
+}
+#form input[type=submit]{
+	margin: 10px 680px;
+	padding: 6px 20px;
+	font: 18px Geosanslight;
+	background-color: black;
+	color: white;
+	cursor: pointer;
+}
+#form input[type=submit]:hover{
+	transition: 1s;
+	background-color: #0f397f;
+}
+#form input[type=date]{
+	float: left;
+	width: 180px;
+	height: 30px;
+	font: 18px Facile Sans;
+	text-align: center;
+	margin: 1px 650px;
+	
+}
+#form input[type=text]:focus{
+	font: 16px Facile Sans;
+}
+
+#error_msg{
+	width: 80%;  
+	margin: 5px auto; 
+	height: 30px; 
+	border: 1px solid #FF0000; 
+	background: #FFB9B8; 
+	color: #FF0000;
+	text-align: center;
+	padding-top: 10px;
+}

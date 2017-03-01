@@ -1,0 +1,64 @@
+/*login css*/
+/*login css*/
+@keyframes appear{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+@keyframes slide{
+	from{top: -100%;}
+	to{bottom: 0;}
+}
+@keyframes slide-right{
+	from{left: -100%;}
+	to{right: 0;}
+}
+
+#form{
+	margin: 0px auto;
+	margin-bottom: 10px;
+	padding: 150px 0px;
+	background-color: rgba(255,255,255,0.8);
+	height: 200px;
+	width: 950px;
+	top: 380px;
+	right: 0;
+	left: 0;
+	animation: slide-right 1s;
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	align-items: center;
+	box-shadow: 15px 15px 75px -10px rgba(0,0,0,0.75);
+}
+#form input[type=text], input[type=password], input[type=date] {
+		 border-style: none;
+         border-bottom: 1px solid #000;
+		 width: 290px;
+         text-align: center;
+		 font: 15px Geosanslight;
+		 background-color: transparent;
+		 box-sizing: border-box;
+		 height: 20%;
+		 
+         }
+
+#form input[type=submit]{
+		 border-style: none;
+		 width: 150px;
+		 text-align: center;
+		 margin: 1% 25%;
+		 padding: 5px;
+		 font: 13px Geosanslight;
+		 background-color: black;
+		 box-sizing: border-box;
+		 color: white;
+		 cursor: pointer;
+}
+#form input[type=submit]:hover{
+	background-color: #0f397f;
+	
+	transition: 1s;
+}
+#form input[type=text]:focus{
+	font: 15px Facile Sans;
+

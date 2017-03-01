@@ -1,0 +1,212 @@
+/*index css*/
+*{
+	margin: 0px auto;
+	padding: 0px;
+	
+}
+.box a{
+	letter-spacing: 10px;
+	padding: 1%;
+	text-decoration: none;
+	color: white;
+	font-size: 140%;
+	background-color: black;
+}
+.box a:hover{
+	color: black;
+	background-color: white;
+	border: 1px solid black;
+	transition: 0.5s;
+}
+.box p{
+	font-family: Montserrat, sans-serif;
+	font-size: 20px;
+	letter-spacing: 4px;
+	color: black;
+	font-style: italic;
+}
+.box-invert a{
+	letter-spacing: 10px;
+	padding: 1%;
+	text-decoration: none;
+	color: black;
+	font-size: 140%;
+	background-color: white;
+	border: 1px solid black;
+}
+.box-invert a:hover{
+	color: white;
+	background-color: black;
+	transition: 0.5s;
+}
+.box-invert h1{
+	font-size: 140px;
+	font-family: Montserrat, sans-serif;
+	color: white;
+	text-shadow: 2px 2px 4px #000000;
+	font-weight: bold;
+	letter-spacing: 0px;
+}
+.box-invert p{
+	font-family: Montserrat, sans-serif;
+	font-size: 20px;
+	letter-spacing: 4px;
+	color: white;
+	font-style: italic;
+	text-shadow: 2px 2px 4px #000000;
+}
+.box1{
+	width: 100%;
+	background-image: url("../images/home4.jpg");
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+	text-align: center;
+	align-items: center;
+	padding: 400px 0px;
+	overflow: hidden;
+
+}
+.box2{
+	width: 100%;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+	text-align: center;
+	align-items: center;
+	padding: 100px 0px;
+	background-color: white;
+	overflow: hidden;
+}
+
+.box3{
+	width: 100%;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+	text-align: center;
+	align-items: center;
+	padding: 15% 0px;
+	background-image: url("../images/roadtrip.jpg");
+	overflow: hidden;
+	/*background-color: #74cec9;*/
+}
+.box4{
+	width: 100%;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+	text-align: center;
+	align-items: center;
+	padding: 12% 0px;
+	background-color: #d5f8ef;
+	background-image: url("../images/coins.jpg");
+	overflow: hidden;
+}
+.box5{
+	width: 100%;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+	text-align: center;
+	align-items: center;
+	font-family: Montserrat, sans-serif;
+	padding: 7% 0px;
+	background-color: #d5f8ef;
+/*	background-image: url("../images/coins.jpg");*/
+	overflow: hidden;
+}
+.box5 h1{
+	font-size: 25px;
+	color: white;
+	text-shadow: 2px 2px 4px #000000;
+	font-weight: bold;
+	letter-spacing: 0px;
+}
+.box5 p{
+	font-size: 20px;
+	letter-spacing: 3px;
+	color: black;
+	font-style: italic;
+	font-family: Montserrat, sans-serif;
+}
+.box5 span, span:after {
+    font-weight: 900;
+    color: white;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    letter-spacing: .1em;
+    padding: .2em 0 .25em 0;
+}
+.box5 span {
+    font-size: 4em;
+    z-index: 100;
+    text-shadow: .04em .04em 0 #9cb8b3;
+}
+.box5 span:after {
+    content: attr(data-shadow-text);
+    color: rgba(0,0,0,.35);
+    text-shadow: none;
+    position: absolute;
+    left: .0875em;
+    top: .0875em;
+    z-index: -1;
+    -webkit-mask-image: url(http://f.cl.ly/items/1t1C0W3y040g1J172r3h/mask.png);
+}
+.box5-content{
+	border: 1px solid black;
+	padding: 5px 0px;
+	margin: 0px 60px;
+	background-color: white;
+	overflow: hidden;
+	filter: blur(1px);
+}
+.box5-content:hover{
+	cursor: pointer;
+	background-color: black;
+	color: white;
+	transition: 0.5s;
+	letter-spacing: 4px;
+	filter: blur(0px);
+	padding: 10px;
+}
+.box-promo{
+	width: 100%;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+	text-align: center;
+	align-items: center;
+	padding: 25% 0px;
+	filter: blur(5px);
+	background-color: white;
+	overflow: hidden;
+}
+.box-promo:hover{
+	filter: blur(0px);
+	transition: 1s;
+	cursor: pointer;
+}
+.item h4 {
+	  color: white;
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+
+  }
+.item span {
+	  padding: 3px 10px;
+      font-style: normal;
+	  color: black;
+	  background-color: white;
+	  border: 1px solid black;
+  }
+.carousel-indicators li {
+      border-color: white;
+  }
+.carousel-indicators li.active {
+      background-color: black;
+  }
+  
+  
+  
+  
+ /*TYPOGRAPHY*/
+ 

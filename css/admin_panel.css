@@ -1,0 +1,14 @@
+/*admin panel css*/
+
+.adminProfile{
+	width: 100%;
+	height: 700px;
+	background-color: #bfd8d2;
+	padding-left: 100px;
+}
+.adminTable{
+	border: 1px solid black;
+	margin: 0px auto;
+	padding: 100px;
+	align-items: center;
+}
